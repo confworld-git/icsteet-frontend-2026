@@ -1,0 +1,696 @@
+.cash {
+  width: 40%;
+  padding: 30px;
+  margin: 0px 20px;
+  box-sizing: border-box;
+  position: sticky;
+  top: 10px;
+  background: linear-gradient(45deg, #c814ff, #003ECF);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.cash > label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: white;
+}
+
+
+.cash > button {
+  padding: 10px;
+  width: 100%;
+  margin-top: 20px;
+  background-color: #00c358;
+  backdrop-filter: blur(8px);
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.cash > label > input {
+  background-color: rgba(255, 255, 255, 0.927);
+  font-weight: 600;
+  font-size: 15px;
+  padding: 8px 10px;
+  color: #00a44a;
+}
+
+.cash > label > input::placeholder {
+  font-weight: 450;
+  font-size: 14px;
+}
+
+.registration {
+  padding: 40px;
+}
+
+.registration > div > h1 {
+  text-align: center;
+  font-size: 26px;
+  background: linear-gradient(90deg, #0800a4, #003ecf);
+  width: fit-content;
+  background-clip: text;
+  color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reg_container > p {
+  text-align: center;
+  font-weight: 550;
+}
+
+.reg_container > span {
+  text-align: center;
+  display: block;
+  font-style: italic;
+  font-weight: 500;
+  clip-path: polygon(1% 0%, 99% 0%, 100% 50%, 99% 100%, 1% 100%, 0% 50%);
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #003ecf;
+  color: white;
+  font-size: 13.5px;
+  padding: 4px 0px;
+  margin-top: 40px;
+}
+
+.registration_fee {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.registration_fee > div {
+  width: 100%;
+}
+
+.registration_fee > div > h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+  padding: 8px;
+  text-align: center;
+  background-color: #69b900;
+  color: white;
+  box-sizing: border-box;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.fee_table {
+  border-collapse: collapse;
+  border-color: #f1f1f1;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 0px 0px 8px 8px;
+  overflow: clip;
+  
+  width: 100%;
+}
+
+.fee_table th {
+  font-size: 14px;
+  text-wrap: nowrap;
+  font-weight: 600;
+  padding: 12px 10px;
+  background-color: #524cf2;
+  color: white;
+}
+
+.fee_table td {
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 450;
+}
+
+.fee_table > tbody > :nth-child(even) {
+  background-color: #eeeeee;
+}
+
+.fee_table input {
+  margin: 0;
+}
+
+.fee_table label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.fee_table > tbody > tr > :nth-child(1) {
+  padding-left: 15px;
+}
+
+.discount-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 50px;
+  /* background-color: #f6f6f9; */
+  background-color: #f3ffe5;
+  border: 2px solid #f6f6f9;
+  margin: -13px 20px 30px 20px;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.discount-section > div {
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.card {
+  flex: 1;
+  background-image: linear-gradient(to bottom, #ffffff90, #ffffff90),
+    url("../../assets/Images/discount-bg.png");
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.card_1 {
+  border-radius: 5px 80px 5px 80px;
+}
+
+.card_2 {
+  border-radius: 80px 5px 80px 5px;
+}
+
+.card > h3 {
+  text-align: center;
+  font-size: 20px;
+  color: #6706d4;
+  font-weight: 700;
+  perspective: 5000;
+}
+
+.card > ul > li {
+  font-size: 14px;
+  font-weight: 550;
+  padding: 10px 0px;
+  perspective: 5000;
+}
+
+.card > hr {
+  border: 1px dashed #bfbfbf;
+}
+
+.discount_contact-info {
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #0895ed;
+  color: white;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.discount_contact-info > span {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.discount_contact-info > button {
+  padding: 6px 10px;
+  background-color: white;
+  border: none;
+  font-family: "poppins", sans-serif;
+  font-weight: 450;
+  cursor: pointer;
+  background-color: #ff206b;
+  color: white;
+}
+
+#note {
+  text-align: center;
+  font-weight: 600;
+  color: #ff206b;
+  margin-top: 0;
+}
+
+#indicator {
+  font-size: 13px;
+  margin-top: 20px;
+  color: #ff0000;
+  font-weight: 500;
+}
+
+.reg_form_container {
+  margin-top: 30px;
+}
+
+.reg_form_container > h1 {
+  margin-bottom: 10px;
+}
+
+.reg_form_container > p {
+  text-align: center;
+  font-weight: 550;
+  margin-top: 0;
+}
+
+.registration_form_paper {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 40px;
+  position: relative;
+}
+
+.registration-form {
+  flex: 0 1 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 30px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  gap: 10px;
+  box-shadow: rgba(149, 157, 165, 0.409) 0px 8px 24px;
+}
+
+.registration-form > * {
+  flex: 0 1 45%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group > input {
+  padding: 10px;
+  font-family: "poppins", sans-serif;
+  letter-spacing: 1px;
+  border: 1px solid #c6c6c6;
+  outline: none;
+}
+
+#mobile-number {
+  padding: 10px;
+  font-family: "poppins", sans-serif;
+  letter-spacing: 1px;
+  border: 1px solid #c6c6c6;
+  outline: none;
+}
+
+.form-group > textarea {
+  padding: 8px 10px;
+  font-family: "poppins", sans-serif;
+  letter-spacing: 1px;
+  border: 1px solid #c6c6c6;
+  outline: none;
+  resize: none;
+}
+
+.form-group > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-group > label {
+  font-weight: 450;
+  font-size: 14.5px;
+}
+
+.form-group > div > label > input {
+  margin: 0;
+}
+
+.form-group > div > label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14.5px;
+}
+
+.form-group > select {
+  padding: 10px;
+  font-family: "poppins", sans-serif;
+  border: 1px solid #c6c6c6;
+  outline: none;
+}
+
+.razorpay_gateway {
+  flex: 0 1 40%;
+  padding: 40px 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 15px;
+  background: linear-gradient(150deg, #524cf2 15%, #4fc600);
+  color: white;
+  position: sticky;
+  top: 120px;
+}
+
+.razorpay_gateway > input {
+  padding: 10px;
+  font-family: "poppins", sans-serif;
+  letter-spacing: 1px;
+  border: 1px solid #c6c6c6;
+  outline: none;
+  font-weight: 450;
+}
+
+.razorpay_gateway > button {
+  padding: 10px;
+  border: none;
+  font-family: "poppins", sans-serif;
+  background-color: #ff206b;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.razorpay_gateway > p {
+  font-size: 14px;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 1080px) {
+  .registration_fee {
+    flex-direction: column;
+  }
+  .fee_table {
+    width: 100%;
+  }
+  .discount-section {
+    flex-direction: column;
+  }
+  .discount_contact-info {
+    margin-bottom: 30px;
+  }
+  .registration_form_paper {
+    gap: 20px;
+  }
+  .registration {
+    padding: 30px;
+  }
+  .form-group > label {
+    text-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .registration-form > * {
+    flex: 1 1 100%;
+  }
+  .registration-form {
+    gap: 0;
+  }
+  .registration-form {
+    flex: 0 1 55%;
+  }
+  .razorpay_gateway {
+    flex: 0 1 45%;
+  }
+  .registration_form_paper {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .registration_form_paper {
+    flex-direction: column;
+  }
+  .registration-form {
+    flex: 0 1 100%;
+  }
+  .razorpay_gateway {
+    flex: 0 1 100%;
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
+  .discount-section {
+    padding: 20px 0px 0px 0px;
+    margin: 0;
+    gap: 10px;
+    background-color: white;
+    border: none;
+  }
+  .registration {
+    padding: 20px;
+  }
+  .registration-form {
+    box-shadow: none;
+    padding: 0px 0px 20px 0px;
+  }
+  .reg_form_container > p {
+    margin-bottom: 0;
+  }
+}
+
+/* Membership Section */
+.membership-section {
+  padding: 20px;
+  border: 2px solid #0F0E4A;
+  border-radius: 10px;
+  background-color: #f0f4ff;
+  margin-bottom: 20px;
+}
+
+.membership-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.membership-title {
+  color: #0F0E4A;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+}
+
+.membership-desc {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+/* Toggle Switch */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.toggle-switch input:checked + .toggle-slider {
+  background-color: #0F0E4A;
+}
+
+.toggle-switch input:checked + .toggle-slider:before {
+  transform: translateX(26px);
+}
+
+/* Coupon Section */
+.coupon-section {
+  padding: 20px;
+  border: 2px solid #0F0E4A;
+  border-radius: 10px;
+  background-color: #f0f4ff;
+  margin-bottom: 20px;
+}
+
+.coupon-title {
+  color: #0F0E4A;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 15px 0;
+}
+
+.coupon-input-group {
+  display: flex;
+  gap: 10px;
+}
+
+.coupon-input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: white;
+}
+
+.coupon-input:focus {
+  outline: none;
+  border-color: #0F0E4A;
+}
+
+.coupon-apply-btn {
+  padding: 10px 20px;
+  background-color: #0F0E4A;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  min-width: 100px;
+  transition: background-color 0.3s;
+}
+
+.coupon-apply-btn:hover:not(:disabled) {
+  background-color: #0a0928;
+}
+
+.coupon-apply-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.coupon-applied {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background-color: #d4edda;
+  border-radius: 6px;
+}
+
+.coupon-success {
+  font-weight: bold;
+  color: #155724;
+  margin: 0 0 4px 0;
+}
+
+.coupon-desc {
+  font-size: 12px;
+  color: #155724;
+  margin: 0;
+}
+
+.coupon-remove-btn {
+  padding: 8px 16px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.coupon-remove-btn:hover {
+  background-color: #c82333;
+}
+
+/* Pricing Breakdown */
+.pricing-breakdown {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f0f4ff;
+  border-radius: 8px;
+}
+
+.pricing-title {
+  margin: 0 0 15px 0;
+  color: #0F0E4A;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.pricing-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.pricing-row.discount {
+  color: #28a745;
+  font-weight: 500;
+}
+
+.pricing-row.subtotal {
+  padding-top: 10px;
+  border-top: 2px solid #0F0E4A;
+  font-weight: 600;
+}
+
+.pricing-row.total {
+  padding-top: 10px;
+  border-top: 2px solid #0F0E4A;
+  font-size: 16px;
+  font-weight: bold;
+  color: #0F0E4A;
+}
+
+.savings-badge {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #d4edda;
+  border-radius: 6px;
+  color: #155724;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .membership-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .coupon-input-group {
+    flex-direction: column;
+  }
+
+  .coupon-apply-btn {
+    width: 100%;
+  }
+}

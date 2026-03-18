@@ -1,0 +1,88 @@
+.payment_Success_Page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url("../assets/Images/celebrate.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 60%;
+}
+
+.payment_Success_Page > div {
+  padding: 20px 0px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 50%;
+  transform: translateY(26%);
+  border-radius: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.payment_Success_Page > div > img {
+  height: 80px;
+}
+
+.payment_Success_Page > div > h1 {
+  font-size: 22px;
+  text-align: center;
+  color: #3e9b00;
+  margin-top: 10px;
+}
+
+.payment_status > li {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  list-style: none;
+  padding: 4px;
+}
+
+#Product_detail {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+#Product_detail > p {
+  margin: 0;
+}
+
+#Product_detail > :first-child {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.payment_status > button {
+  width: 100%;
+  background-color: #3e9b00;
+  color: white;
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  padding: 10px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .payment_Success_Page {
+    background-size: 100%;
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .payment_Success_Page > div {
+    width: 100%;
+  }
+  .payment_Success_Page {
+    padding: 30px;
+    box-sizing: border-box;
+    background-size: cover;
+  }
+}

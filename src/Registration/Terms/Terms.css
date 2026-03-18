@@ -1,0 +1,86 @@
+.terms-and-conditions {
+  padding: 40px 100px;
+}
+
+.terms-and-conditions > img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.terms-and-conditions > div {
+  background-color: white;
+}
+
+.terms-and-conditions > div > h1 {
+  font-size: 22px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #0800a4, #003ecf);
+  width: fit-content;
+  background-clip: text;
+  color: transparent;
+}
+
+.terms-and-conditions p {
+  text-align: justify;
+}
+
+.terms-and-conditions li {
+  text-align: justify;
+}
+
+.terms-and-conditions > div > p {
+  font-size: 14.5px;
+  font-weight: 500;
+}
+
+#terms-and-conditions__container > ul > li {
+  align-items: start;
+}
+
+#terms-and-conditions__container > ul > li > svg {
+  font-size: 22px;
+  color: black;
+}
+
+.terms-and-conditions > div > ul {
+  padding: 0px;
+  margin-bottom: 30px;
+}
+
+.terms-and-conditions > div > ul > h1 {
+  font-size: 17px;
+}
+
+.terms-and-conditions > div > ul > p {
+  font-size: 14.5px;
+  font-weight: 500;
+}
+
+.terms-and-conditions > div > ul > li {
+  font-size: 14px;
+  font-weight: 500;
+  list-style: none;
+  padding: 5px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.terms-and-conditions > div > ul > li > svg {
+  font-size: 20px;
+  flex-shrink: 0;
+  color: rgb(0, 0, 207);
+}
+
+@media screen and (max-width: 750px) {
+  .terms-and-conditions {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .terms-and-conditions {
+    padding: 20px;
+  }
+}

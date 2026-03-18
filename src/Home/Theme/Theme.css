@@ -1,0 +1,181 @@
+.theme {
+  padding: 60px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.theme > div > span {
+  font-weight: 550;
+  font-size: 15px;
+  text-align: center;
+  display: block;
+  color: white;
+  background-color: #368506;
+  padding-bottom: 10px;
+}
+
+.theme > p {
+  transition: 0.3s ease-in-out;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  clip-path: polygon(
+    0 0,
+    80% 0%,
+    100% 20%,
+    100% 100%,
+    100% 100%,
+    20% 100%,
+    0% 80%,
+    0 0
+  );
+  perspective: 5000;
+}
+
+.theme > p > img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 20px;
+  transition: 0.3s ease-in-out;
+  position: relative;
+  clip-path: polygon(
+    0 0,
+    80% 0%,
+    100% 20%,
+    100% 100%,
+    100% 100%,
+    20% 100%,
+    0% 80%,
+    0 0
+  );
+}
+
+.theme > p:hover {
+  transform: rotateX(15deg) rotateY(-20deg);
+}
+
+.theme > p::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  height: 6px;
+  top: 0%;
+  left: 0%;
+  border-radius: 50%;
+  transform: translate(0%, 300px) rotate(135deg) scaleX(4);
+  filter: blur(15px);
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.theme > p:hover::after {
+  opacity: 1;
+  animation: shine1 0.8s ease-in-out;
+}
+
+@keyframes shine1 {
+  0% {
+    transform: translate(-30%, -30%) rotate(135deg) scaleX(4);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0%, 300px) rotate(135deg) scaleX(4);
+  }
+}
+
+.theme > div {
+  width: 40%;
+}
+
+.theme > div > h3 {
+  font-size: 26px;
+  color: #292887;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+}
+
+.theme > div > p {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.theme > div > p > span {
+  font-size: 30px;
+  color: #c9c9c9;
+}
+
+.conference_theme {
+  background-image: linear-gradient(90deg, #00000080, #00000080),
+    url("../../assets/Images/conference_theme.jpeg");
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.conference_theme > div {
+  width: 80%;
+  padding: 40px 0px;
+}
+
+.conference_theme > div > h3 {
+  text-align: center;
+  color: white;
+  /* background-color: #292887; */
+  background-color: #368506;
+}
+
+.conference_theme > div > p {
+  text-align: justify;
+  color: white;
+}
+
+@media screen and (max-width: 800px) {
+  .theme {
+    justify-content: space-between;
+  }
+  .theme > div {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .theme {
+    flex-direction: column;
+    gap: 0;
+  }
+  .theme > div {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .theme {
+    padding: 40px 20px 20px 20px;
+  }
+  .theme > p > img {
+    width: 100%;
+  }
+  .conference_theme {
+    background-image: none;
+    color: black;
+  }
+  .conference_theme > div > p {
+    color: black;
+  }
+  .conference_theme > div {
+    padding-top: 0;
+  }
+}

@@ -1,0 +1,263 @@
+.navbar > p {
+  margin: 0;
+  font-size: 14px;
+  padding: 10px 0px;
+  background-color: #4fc600;
+  background-image: linear-gradient(
+    180deg,
+    #4bbb00 0%,
+    #4fc600 20%,
+    #4fc600 80%,
+    #4bbb00 100%
+  );
+  color: white;
+  font-weight: 550;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 4px 12px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: white;
+}
+
+.navbar > div > img {
+  height: 60px;
+}
+
+.navbar > div > ul {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar > div > ul > li > button {
+  padding: 6px 20px;
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
+  border: none;
+  background-color: #ff206b;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar > div > ul > li {
+  color: #00032b;
+  list-style: none;
+  position: relative;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 0px 10px;
+  cursor: pointer;
+}
+
+.navbar > div > ul > li > a {
+  text-decoration: none;
+  color: #00032b;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 0px;
+}
+
+.navbar > div > ul > li:hover ul {
+  display: block;
+}
+
+.navbar > div > ul > li > ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  z-index: 12;
+  border-radius: 5px;
+  padding: 8px 14px;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.227) 0px 4px 12px;
+  display: none;
+}
+
+.navbar > div > ul > li > ul > li {
+  list-style: none;
+}
+
+.navbar > div > ul > li > ul > li > a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  color: #00032b;
+  cursor: pointer;
+  text-wrap: nowrap;
+  padding: 10px 8px;
+  box-sizing: border-box;
+  transition: 0.2s ease-in-out;
+}
+
+.navbar > div > ul > li > ul > li > a:hover {
+  padding-left: 15px;
+}
+
+.navbar > div > ul > li > ul > li > a:hover {
+  background-color: #c9d1ff;
+}
+
+#parent_li {
+  padding: 10px;
+}
+
+.menu_icon {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  background-color: #ff206b;
+  color: white;
+  padding: 8px;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 1240px) {
+  .navbar > div > ul > li {
+    padding: 0px;
+  }
+  #parent_li {
+    padding: 0;
+  }
+  .navbar > div > ul {
+    gap: 14px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .navbar > div > ul {
+    display: none;
+  }
+  .menu_icon {
+    display: block;
+  }
+  .navbar > div {
+    align-items: center;
+  }
+}
+
+.side_bar_parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  overflow: hidden;
+  padding: 40px;
+  box-sizing: border-box;
+  z-index: 100;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  animation: slide_navbar 0.4s forwards ease-in-out;
+}
+
+@keyframes slide_navbar {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.side_navbar {
+  padding: 20px;
+  box-sizing: border-box;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: clip;
+}
+
+.side_navbar::-webkit-scrollbar {
+  display: none;
+}
+
+.side_navbar > p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.side_navbar > p > svg {
+  padding: 10px;
+  background-color: #060e78;
+  color: white;
+  border-radius: 50%;
+  text-align: end;
+}
+
+.side_navbar > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  height: auto;
+}
+
+.side_navbar > ul > li {
+  padding: 12px;
+  list-style: none;
+  background-color: #f6f6f9;
+  font-weight: 550;
+}
+
+.side_navbar > ul > li > a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  font-weight: 550;
+  font-size: 14px;
+}
+
+.side_navbar > ul > li > ul {
+  list-style: none;
+  padding-top: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.side_navbar > ul > li > ul > li > a {
+  padding: 12px;
+  display: inline-block;
+  width: 100%;
+  font-weight: 550;
+  text-wrap: wrap;
+  font-size: 14px;
+}
+
+.side_navbar button {
+  background-color: #060e78;
+  color: white;
+  font-family: "poppins", sans-serif;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 16px;
+  border: none;
+}
+
+@media screen and (max-width: 600px) {
+  .side_bar_parent {
+    width: 100%;
+  }
+}

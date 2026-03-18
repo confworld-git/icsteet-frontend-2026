@@ -1,0 +1,111 @@
+.venue {
+  padding: 20px 40px;
+}
+
+.venue > h1 {
+  font-size: 24px;
+  text-align: center;
+  color: transparent;
+  background: linear-gradient(90deg, #0800a4, #003ecf);
+  background-clip: text;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.venue > p {
+  font-size: 15.5px;
+  text-align: center;
+  font-weight: 600;
+  text-align: center;
+  display: inline-block;
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.venue > p > svg {
+  color: #fcc600;
+}
+
+.venue > section {
+  margin-top: 20px;
+  columns: 300px;
+}
+
+.venue > section > img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 10px;
+  transition: 0.2s ease-in-out;
+  border-radius: 20px;
+  position: relative;
+}
+
+.venue > section > :nth-child(10) {
+  height: 320px;
+  object-position: bottom;
+}
+
+.venue > section > :nth-child(8) {
+  height: 300px;
+  object-position: bottom;
+}
+
+.venue > section > :nth-child(2) {
+  height: 300px;
+  object-position: bottom;
+}
+
+.venue > section > :nth-child(3) {
+  height: 260px;
+  object-position: bottom;
+}
+
+@media screen and (max-width: 600px) {
+  .venue {
+    padding: 20px;
+  }
+}
+
+.venue_location {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.venue_location > div {
+  flex: 1;
+}
+
+.venue_location > iframe {
+  flex: 1;
+}
+
+.venue_location > div > h1 {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  color: #ff206b;
+}
+
+.venue_location > div > h1 > svg {
+  color: #ff206b;
+}
+
+.venue_location > div > p {
+  font-size: 15px;
+  font-weight: 550;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .venue > section > img {
+    height: 250px;
+  }
+}

@@ -1,0 +1,207 @@
+.essential_downloads {
+  /* padding: 40px; */
+  background-color: #ffffff;
+}
+
+.essential_downloads > img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.essential_downloads > h1 {
+  text-align: center;
+  font-size: 26px;
+  background: linear-gradient(90deg, #0800a4, #003ecf);
+  background-clip: text;
+  color: transparent;
+  width: fit-content;
+  margin: 15px auto 0px auto;
+}
+
+.downloads_files {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0px 40px 40px 40px;
+  gap: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.downloads_files > div {
+  padding: 20px 0px;
+  background-color: #f6f6f9;
+  border-radius: 6px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.downloads_files > div > img {
+  height: 60px;
+}
+
+.downloads_files > div > p {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.downloads_files > div > button {
+  padding: 6px 12px;
+  font-weight: 500;
+  background: linear-gradient(45deg, #0c00eb, #017cf7);
+  border: 1px solid #a7afff;
+  color: white;
+  font-size: 13px;
+  font-family: "poppins", sans-serif;
+  border-radius: 2px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.downloads_files > div > button > svg {
+  font-size: 16px;
+}
+
+.dialog_download_form {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: 500;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  backdrop-filter: blur(5px);
+}
+
+.dialog_box {
+  border: none;
+  padding: 40px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.dialog_box > svg {
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.dialog_box > h1 {
+  margin: 0;
+  font-size: 22px;
+  text-align: center;
+}
+
+.dialog_box > form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.dialog_box > form > input {
+  padding: 10px;
+  font-family: "poppins", sans-serif;
+  border: 1px solid #dfdfe6;
+  border-radius: 5px;
+}
+
+.dialog_box > form > input[type="submit"] {
+  background-color: #0800a4;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.Loading_Container {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.Loading_Container > p {
+  margin: 0px 0px 5px 0px;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  margin: 15px auto 30px auto;
+  position: relative;
+}
+
+.loader:before {
+  content: "";
+  width: 48px;
+  height: 5px;
+  background: #f0808050;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  border-radius: 50%;
+  animation: shadow324 0.5s linear infinite;
+}
+
+.loader:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #f08080;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
+  animation: jump7456 0.5s linear infinite;
+}
+
+@keyframes jump7456 {
+  15% {
+    border-bottom-right-radius: 3px;
+  }
+
+  25% {
+    transform: translateY(9px) rotate(22.5deg);
+  }
+
+  50% {
+    transform: translateY(18px) scale(1, 0.9) rotate(45deg);
+    border-bottom-right-radius: 40px;
+  }
+
+  75% {
+    transform: translateY(9px) rotate(67.5deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(90deg);
+  }
+}
+
+@keyframes shadow324 {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.2, 1);
+  }
+}

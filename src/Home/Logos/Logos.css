@@ -1,0 +1,61 @@
+.main-logos > div {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: rgba(149, 157, 165, 0.108) 0px 8px 24px;
+  border-radius: 20px;
+  margin-top: 20px;
+  width: 90%;
+  position: relative;
+}
+
+.main-logos > div > img {
+  height: 70px;
+}
+
+.main-logos > div > :nth-child(1) {
+  height: 100px;
+}
+
+.main-logos > div > :nth-child(2) {
+  height: 40px;
+}
+
+.main-logos > div > div > img {
+  height: 60px;
+}
+
+.main-logos > div > div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.main-logos > div > div > p {
+  font-weight: 600;
+  font-size: 13px;
+  color: black;
+  position: absolute;
+  top: -3px;
+  right: 140px;
+}
+
+@media screen and (max-width: 1350px) {
+  .main-logos > div {
+    padding: 30px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .main-logos > div > div {
+    width: 100%;
+  }
+  .main-logos > div {
+    width: 100%;
+  }
+}

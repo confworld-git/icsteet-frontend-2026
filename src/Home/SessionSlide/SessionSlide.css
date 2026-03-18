@@ -1,0 +1,50 @@
+#Session_Image {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  object-position: left;
+  border-radius: 10px;
+  user-select: none;
+  position: relative;
+}
+
+.session-track-slide {
+  padding: 40px 40px 10px 40px;
+}
+
+.session-track-slide > h1 {
+  text-align: center;
+  font-size: 26px;
+  text-align: center;
+  margin-top: 0;
+  color: #292887;
+}
+
+.session-track-slide > p {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.session-track-slide > span {
+  text-align: justify;
+  display: inline-block;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.session-image-container {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1150px) {
+  #Session_Image {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .session-track-slide{
+    padding: 40px 20px 20px 20px;
+  }
+}

@@ -1,0 +1,253 @@
+.infographic-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px 30px 20px;
+}
+
+.infographic-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.brand-name {
+  font-size: 32px;
+  color: #f7c32e;
+  font-weight: bold;
+}
+
+.language-switch {
+  background-color: #f7c32e;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.infographic-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #292887;
+}
+
+.infographic-subtitle {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 550;
+  margin-bottom: 40px;
+  color: #000000;
+}
+
+.infographic-steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 10px;
+  /* flex-wrap: wrap; */
+}
+
+.infographic-steps > img {
+  height: 40px;
+  margin-top: 40px;
+  animation: move-right 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes move-right {
+  0%,
+  50% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.step {
+  flex: 1;
+  max-width: 23%;
+  text-align: center;
+}
+
+.circles {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  border: 6px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  animation: bor 2s ease-in-out infinite alternate;
+}
+
+@keyframes bor {
+  0% {
+    border: 6px solid transparent;
+  }
+  100% {
+    border: 6px solid;
+  }
+}
+
+.orange {
+  background-color: #6ca542;
+  border-color: #6ca542;
+}
+
+.red {
+  background-color: #f78811;
+  border-color: #f78811;
+}
+
+.blue {
+  background-color: #1abc9c;
+  border-color: #1abc9c;
+}
+
+.red-red {
+  background-color: #f1434c;
+  border-color: #f1434c;
+}
+
+.step-number {
+  font-size: 16px;
+  font-weight: 450;
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 10px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.step-number > img {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.step-number > span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.step-label {
+  font-size: 14px;
+  position: absolute;
+  bottom: -25px;
+  width: 100%;
+  text-align: center;
+  color: #333;
+}
+
+.step-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.claim-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.claim-div > a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.claim-div > a > svg {
+  font-size: 20px;
+  color: green;
+}
+
+.claim-div > a > b {
+  color: green;
+}
+
+#claim {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 800;
+  color: #3957d7;
+  text-align: center;
+}
+
+.step-description {
+  font-size: 15px;
+  font-weight: 550;
+  color: #202020;
+}
+
+@media screen and (max-width: 850px) {
+  .infographic-steps > img {
+    height: 20px;
+    margin-top: 50px;
+    animation: none;
+  }
+  .circles {
+    z-index: 5;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .infographic-steps > img {
+    height: 20px;
+    margin-top: 0;
+    transform: rotate(90deg);
+  }
+  .infographic-steps {
+    flex-direction: column;
+    align-items: center;
+  }
+  .step-description {
+    width: 100%;
+  }
+  .step {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f6f6f9;
+    padding: 20px;
+  }
+  .circles {
+    height: 160px;
+    width: 160px;
+  }
+  .step-number > img {
+    height: 160px;
+    width: 160px;
+  }
+  .step-number {
+    height: 120px;
+    width: 120px;
+  }
+}

@@ -1,0 +1,212 @@
+.about-icsteet {
+  box-sizing: border-box;
+}
+
+.about-icsteet > img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about-icsteet h1 {
+  font-size: 26px;
+  color: #292887;
+  font-weight: 800;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.about-icsteet p {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.about-icsteet__container {
+  padding: 20px 40px 10px 40px;
+}
+
+.about-icsteet__container > p > b > sub {
+  font-size: 13px;
+  vertical-align: super;
+}
+
+.Objectives > h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #292887;
+}
+
+.Objectives > p {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.Objectives {
+  padding: 0px 40px 40px 40px;
+}
+
+.Objectives__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.Objectives__container > div {
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f6f6f9;
+  flex: 0 0 300px;
+  border: 1px solid #f2f2ff;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.Objectives__container > div > h1 {
+  font-size: 16px;
+  transition: 0.4s ease-in-out;
+}
+
+.Objectives__container > div > p {
+  font-size: 13px;
+  transition: 0.4s ease-in-out;
+}
+
+.Objectives__container > :nth-child(odd)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  background-color: #0793d0;
+  transition: 0.4s ease-in-out;
+  z-index: -1;
+}
+.Objectives__container > div:hover::after {
+  height: 100%;
+}
+.Objectives__container > div:hover > h1 {
+  color: white;
+}
+.Objectives__container > div:hover > p {
+  color: white;
+}
+
+.Objectives__container > :nth-child(even)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  background-color: #09c5b2;
+  transition: 0.4s ease-in-out;
+  z-index: -1;
+}
+.conference-theme {
+  padding: 40px;
+  background: linear-gradient(to bottom, #030b78, #100f45);
+  color: white;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.conference-theme > img {
+  height: 300px;
+  border-radius: 20px;
+  clip-path: polygon(
+    0 0,
+    80% 0%,
+    100% 20%,
+    100% 100%,
+    100% 100%,
+    20% 100%,
+    0% 80%,
+    0 0
+  );
+}
+
+.conference-theme > div > h1 {
+  color: #f40051;
+  font-weight: 700;
+}
+
+.conference-theme > div > p {
+  text-align: justify;
+}
+
+.conference-theme > div > p > b {
+  color: #f40051;
+}
+
+.key_focus {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 40px;
+}
+
+.key_focus > div {
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f6f6f9;
+  flex: 0 0 300px;
+  border: 1px solid #f2f2ff;
+  border-radius: 10px;
+}
+
+.key_focus > div > h1 {
+  font-size: 16px;
+}
+
+.key_focus > div > ul {
+  padding-left: 20px;
+}
+
+.key_focus > div > ul > li {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 950px) {
+  .conference-theme {
+    flex-direction: column-reverse;
+  }
+  .conference-theme > img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-icsteet > img {
+    height: 200px;
+  }
+  .about-icsteet__container {
+    padding: 20px;
+  }
+  .Objectives > h3 {
+    margin-top: 0;
+  }
+  .Objectives__container > div {
+    flex: 0 0 100%;
+  }
+  .key_focus > div {
+    flex: 0 0 100%;
+  }
+  .conference-theme {
+    padding: 20px;
+  }
+  .key_focus {
+    padding: 20px;
+  }
+  .Objectives {
+    padding: 0px 20px 20px 20px;
+  }
+}

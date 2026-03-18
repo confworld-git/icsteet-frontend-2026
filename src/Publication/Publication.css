@@ -1,0 +1,226 @@
+.section-container {
+  text-align: center;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-container .section-description {
+  font-size: 1rem;
+  color: #333;
+}
+.section-container .section-title {
+  font-size: 24px;
+  margin: 10px auto 0px auto;
+  text-align: center;
+  color: transparent;
+  background: linear-gradient(90deg, #0800a4, #003ecf);
+  background-clip: text;
+  width: fit-content;
+}
+
+.section-container .journal-card {
+  position: relative;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 2rem auto 2rem;
+  max-width: 400px;
+}
+
+.section-container .journal-image-wrapper {
+  position: absolute;
+  top: -2.5rem;
+  left: 1rem;
+  width: 80px;
+  height: 80px;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  background: #f0f0f0;
+}
+
+.section-container .journal-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-container > .journal-content {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.section-container .journal-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #0b2347;
+}
+
+.section-container .divider {
+  margin: 0.5rem auto;
+  border: 1px solid #ccc;
+  width: 80%;
+}
+
+.section-container .text {
+  font-weight: 600;
+  color: #555;
+}
+
+.section-container .value {
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .section-container .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-container .journal-card {
+    margin-top: 4rem;
+    padding: 1.5rem;
+  }
+
+  .section-container .journal-title {
+    font-size: 1rem;
+  }
+
+  .section-container .journal-image-wrapper {
+    width: 60px;
+    height: 60px;
+    top: -2rem;
+  }
+}
+.publication {
+  padding: 40px 100px;
+}
+
+.publication > h1 {
+  font-size: 24px;
+  text-align: center;
+  background: linear-gradient(90deg, #0800a4, #003ecf);
+  width: fit-content;
+  background-clip: text;
+  color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.publication > p {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.publication > p > b {
+  color: #ff206b;
+}
+
+.publication > p > b > sub {
+  vertical-align: super;
+  font-size: 13px;
+}
+
+.conference-proceeding {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.conference-proceeding > div {
+  padding: 20px;
+  width: 40%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.conference-proceeding > div > h1 {
+  font-size: 17px;
+  margin-top: 0;
+  color: #357c0d;
+}
+
+.conference-proceeding > div > img {
+  width: 100%;
+}
+
+.conference-proceeding > div > p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.policy-ethics {
+  margin-top: 40px;
+}
+
+.policy-ethics > div {
+  padding: 10px 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.policy-ethics > :nth-child(1) {
+  margin-bottom: 30px;
+}
+
+.policy-ethics > div > img {
+  width: 200px;
+}
+
+.policy-ethics > div > div > h1 {
+  font-size: 18px;
+  color: #357c0d;
+}
+
+.policy-ethics > div > div > ul > li {
+  font-size: 14.5px;
+  font-weight: 500;
+  padding: 6px;
+}
+
+#plagiarism-policy-ethics {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+  .publication {
+    padding: 40px;
+  }
+  .conference-proceeding > div {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .conference-proceeding {
+    flex-direction: column;
+  }
+  .conference-proceeding > div {
+    width: 100%;
+  }
+  .policy-ethics > div {
+    flex-direction: column;
+  }
+  .publication {
+    padding: 30px 20px;
+  }
+  .publication > p {
+    margin-bottom: 0;
+  }
+}

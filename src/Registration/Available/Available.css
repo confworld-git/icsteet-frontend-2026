@@ -1,0 +1,92 @@
+.available {
+  padding: 40px 80px;
+}
+
+.available > h1 {
+  font-size: 22px;
+  background: linear-gradient(90deg, #0800a4, #003ecf);
+  width: fit-content;
+  background-clip: text;
+  color: transparent;
+}
+
+.available__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.available__container > div {
+  padding: 10px;
+  box-sizing: border-box;
+  /* flex: 0 0 250px; */
+  background-color: #f6f6f9;
+  border: 1px solid #f2f2ff;
+  width: 100%;
+}
+
+.available__container > div > img {
+  width: 100%;
+  background-color: white;
+  height: 150px;
+  padding: 10px;
+  box-sizing: border-box;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+}
+
+.available__container > div > p {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.bank__details {
+  padding: 0;
+}
+
+.bank__details > li {
+  list-style: none;
+  padding: 6px 0px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.available > p {
+  font-size: 15.5px;
+  font-weight: 500;
+}
+
+.available > p > a {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 950px) {
+  .available {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .available__container {
+    flex-wrap: wrap;
+  }
+  .available__container > div {
+    flex: 0 0 48%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .available__container > div {
+    flex: 0 0 90%;
+  }
+  .available__container {
+    justify-content: center;
+  }
+  .available__container > div > img {
+    height: 200px;
+  }
+}

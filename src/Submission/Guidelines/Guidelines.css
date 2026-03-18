@@ -1,0 +1,100 @@
+.submission_guidelines {
+  padding: 40px;
+}
+
+.submission_guidelines > h1 {
+  font-size: 24px;
+  text-align: center;
+  background: linear-gradient(90deg, #0800a4, #003ecf);
+  width: fit-content;
+  background-clip: text;
+  color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.submission_guidelines > p {
+  font-weight: 550;
+  margin-top: 30px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.guide_abstract_full {
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+  align-items: start;
+}
+
+.guide_abstract_full > :nth-child(1) {
+  flex: 2;
+}
+
+.guide_abstract_full > :nth-child(2) {
+  flex: 4;
+}
+
+.guide_abstract_full > div {
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background-color: white;
+}
+
+.guide_abstract_full > div > h1 {
+  font-size: 18px;
+  /* color: #000218; */
+  color: #357c0d;
+}
+
+.guide_abstract_full > div > ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.guide_abstract_full > div > ul > li {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px;
+  background-color: #f6f6f6;
+  border-radius: 5px;
+  border-left: 4px solid #524cf2;
+  list-style: none;
+}
+
+.guide_abstract_full > div > ul > button {
+  padding: 10px;
+  font-family: "poppins", sans-serif;
+  font-weight: 550;
+  color: black;
+  background-color: #fcc600;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .guide_abstract_full > :nth-child(1) {
+    flex: 2;
+  }
+  .guide_abstract_full > :nth-child(2) {
+    flex: 2;
+  }
+  .guide_abstract_full {
+    gap: 20px;
+  }
+  .submission_guidelines {
+    padding: 30px 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .guide_abstract_full{
+    flex-direction: column;
+  }
+}

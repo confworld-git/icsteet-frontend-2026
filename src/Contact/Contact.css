@@ -1,0 +1,152 @@
+.partner_container {
+  padding: 40px 80px;
+  position: relative;
+}
+
+.partner_with {
+  display: flex;
+  justify-content: space-between;
+}
+
+.partner_with > div > h1 {
+  font-size: 24px;
+  background: linear-gradient(90deg, #0800a4, #003ecf);
+  width: fit-content;
+  background-clip: text;
+  color: transparent;
+}
+
+.partner_with > div > p {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 5px 0px;
+  margin: 0;
+  text-align: justify;
+  width: 90%;
+}
+
+.partner_img {
+  position: relative;
+}
+
+.partner_img > img {
+  height: 400px;
+  position: sticky;
+  top: 165px;
+  transform: rotateY(180deg);
+}
+
+.contact_person_1 {
+  background-image: linear-gradient(160deg, #1a174f, #524cf2);
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  width: 90%;
+}
+
+.contact_person_1 > h1 {
+  font-size: 17px;
+  margin-top: 0;
+}
+
+.contact_person_1 > p {
+  font-size: 14px;
+  font-weight: 550;
+  margin: 0;
+  padding: 4px 0px;
+}
+
+.contact_person_1 > p > a {
+  color: #f40051;
+  font-weight: 600;
+}
+
+.follow_us {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.follow_us > a > svg {
+  font-size: 22px;
+  color: #ec5b00;
+}
+
+.Contact_form {
+  padding: 40px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: 90%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border: 2px solid #f2f2ff;
+}
+
+.Contact_form > h1 {
+  margin: 0px 0px 15px 0px;
+  font-size: 22px;
+}
+
+.Contact_form > input {
+  font-family: "poppins", sans-serif;
+  letter-spacing: 1px;
+  padding: 10px;
+  border: 1.5px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+  border-radius: 4px;
+}
+
+#contact_number_select {
+  font-family: "poppins", sans-serif;
+  letter-spacing: 1px;
+  padding: 10px;
+  border: 1.5px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+  border-radius: 4px;
+}
+
+.Contact_form > input[type="submit"] {
+  background-color: #fcc600;
+  border: none;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 1100px) {
+  .partner_container {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .partner_img > img {
+    display: none;
+  }
+  .contact_person_1 {
+    width: 100%;
+  }
+  .partner_with > div > p {
+    width: 100%;
+  }
+  .Contact_form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .partner_container {
+    padding: 30px 20px;
+  }
+  .follow_us{
+    display: inline-block;
+  }
+  .Contact_form{
+    padding: 20px;
+  }
+}

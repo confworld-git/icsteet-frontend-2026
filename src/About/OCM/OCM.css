@@ -1,0 +1,300 @@
+.Members {
+  margin: 0px 0px 0px 0px;
+}
+
+.Members > h1 {
+  font-size: 23px;
+  margin: 40px auto 0px auto;
+  background: linear-gradient(90deg, #0800a4, #003ecf);
+  width: fit-content;
+  background-clip: text;
+  color: transparent;
+  font-family: "poppins", sans-serif;
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffffb9;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 300px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.member > img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: 0px -10px;
+  border-radius: 10px;
+}
+
+.member > h3 {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.member > p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 13px;
+}
+
+.Qualifications {
+  padding: 40px 60px;
+  background-color: #f9f9f9;
+}
+
+.Qualifications > h1 {
+  font-size: 22px;
+  text-align: center;
+  margin: 10px auto 10px auto;
+  background: linear-gradient(90deg, #0800a4, #003ecf);
+  width: fit-content;
+  background-clip: text;
+  color: transparent;
+  font-family: "poppins", sans-serif;
+}
+
+.Qualifications > div {
+  margin: 20px 0px;
+  background-color: white;
+  padding: 10px 16px;
+  box-sizing: border-box;
+}
+
+.Qualifications > div > h1 {
+  font-size: 16px;
+  color: #226248;
+  font-family: "poppins", sans-serif;
+}
+
+#rules_list {
+  margin: 5px;
+}
+
+.Qualifications > div > p,
+.Qualifications > div > li {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px;
+  gap: 10px;
+  color: black;
+}
+
+.Qualifications > div > li {
+  list-style: disc;
+  color: black;
+}
+
+.Qualifications > div > p {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.Qualifications > div > p > span > svg {
+  font-size: 20px;
+  color: rgb(71, 173, 12);
+}
+
+.Qualifications > div > p > :nth-child(1) {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.qualification-form {
+  margin: 60px auto;
+  padding: 20px 40px 40px 40px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.qualification-form > h1 {
+  text-align: center;
+  font-size: 22px;
+  margin: 10px auto 0px auto;
+  font-family: "poppins", sans-serif;
+  font-weight: 700;
+  background: linear-gradient(90deg, #0800a4, #003ecf);
+  width: fit-content;
+  background-clip: text;
+  color: transparent;
+}
+
+.container-title {
+  margin-top: 40px;
+}
+
+.container-title,
+.container-first-name,
+.container-last-name,
+.container-email,
+.container-phone,
+.container-member-category,
+.container-organization,
+.container-qualification,
+.container-professional-experience,
+.container-industry-experience,
+.container-department,
+.container-specialization,
+.container-research-area,
+.container-country,
+.container-associated-cerada,
+.container-publications,
+.container-books-published,
+.container-journals,
+.container-description,
+.container-upload-cv,
+.container-conference-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 22px;
+}
+
+.container-title label,
+.container-first-name label,
+.container-last-name label,
+.container-email label,
+.container-phone label,
+.container-member-category label,
+.container-organization label,
+.container-qualification label,
+.container-professional-experience label,
+.container-industry-experience label,
+.container-department label,
+.container-specialization label,
+.container-research-area label,
+.container-country label,
+.container-associated-cerada label,
+.container-publications label,
+.container-books-published label,
+.container-journals label,
+.container-description label,
+.container-upload-cv label,
+.container-conference-info label {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.input-title,
+.input-first-name,
+.input-last-name,
+.input-email,
+.input-phone,
+.input-member-category,
+.input-organization,
+.input-qualification,
+.input-professional-experience,
+.input-industry-experience,
+.input-department,
+.input-specialization,
+.input-research-area,
+.input-country,
+.input-associated-cerada,
+.input-publications,
+.input-books-published,
+.input-journals,
+.input-description,
+.input-upload-cv,
+.input-conference-info,
+.PhoneInputInput,
+.PhoneInputCountrySelect {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: "poppins", sans-serif;
+}
+
+.input-description,
+.input-conference-info {
+  resize: none;
+  height: 80px;
+}
+
+.form-info {
+  font-size: 13px;
+  margin: 6px 0px;
+  color: rgb(218, 0, 0);
+}
+
+@media screen and (max-width: 768px) {
+  .container-title,
+  .container-first-name,
+  .container-last-name,
+  .container-email,
+  .container-phone,
+  .container-member-category,
+  .container-organization,
+  .container-qualification,
+  .container-professional-experience,
+  .container-industry-experience,
+  .container-department,
+  .container-specialization,
+  .container-research-area,
+  .container-country,
+  .container-associated-cerada,
+  .container-publications,
+  .container-books-published,
+  .container-journals,
+  .container-description,
+  .container-upload-cv,
+  .container-conference-info {
+    width: 100%;
+  }
+}
+
+.submit-btn {
+  padding: 10px 30px;
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #ff206b;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 15px;
+  width: 200px;
+}
+
+@media screen and (max-width: 1250px) {
+  .Members > h1 {
+    background-position: 0px -250px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .Members > h1 {
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .speaker > section > h1 {
+    font-size: 20px;
+  }
+  .Qualifications {
+    padding: 40px 20px;
+    /* padding: 0; */
+  }
+  .qualification-form {
+    padding: 20px;
+  }
+  .qualification-form > h1 {
+    font-size: 18px;
+  }
+  .Qualifications > h1 {
+    font-size: 20px;
+  }
+  .qualification-form {
+    border-radius: 20px;
+  }
+}

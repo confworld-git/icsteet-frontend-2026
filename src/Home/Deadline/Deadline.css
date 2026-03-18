@@ -1,0 +1,122 @@
+.deadline {
+  padding: 50px 40px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.deadline > h1 {
+  font-size: 26px;
+  text-align: center;
+  margin-top: 0;
+  color: #292887;
+  font-weight: 700;
+}
+
+.deadline > section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.deadline > p {
+  margin-bottom: 0;
+  padding: 2px 10px 2px 40px;
+  margin-top: 50px;
+  color: rgb(0, 0, 0);
+  position: relative;
+  font-size: 14px;
+  gap: 10px;
+  font-weight: 450;
+  border-radius: 500px 500px;
+}
+
+.deadline > p > a {
+  background-color: orangered;
+  color: white;
+  padding: 4px;
+}
+
+.Calendar {
+  position: relative;
+  width: 200px;
+  border: 1px solid #388d00;
+  border-radius: 10px;
+  background-color: #00a4b3;
+  scale: 1.1;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.Calendar > p {
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+  color: white;
+  border-radius: 10px 10px 0px 0px;
+  background-color: #47af03;
+}
+
+.Calendar > h1 {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  background-color: white;
+  position: relative;
+  color: black;
+  padding: 8px 0px;
+  margin: 0;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.span-one {
+  left: 10px;
+}
+.span-two {
+  left: 20px;
+}
+.span-three {
+  right: 10px;
+}
+.span-four {
+  right: 20px;
+}
+
+.Calendar > span {
+  height: 14px;
+  width: 4px;
+  border-radius: 500px;
+  display: inline-block;
+  position: absolute;
+  top: -7px;
+  background-color: #646cff;
+  border: 1px solid #08027d;
+}
+
+.th {
+  vertical-align: super;
+  font-size: 10px;
+  padding-left: 1px;
+}
+
+@media screen and (max-width: 950px) {
+  .deadline > section {
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .deadline {
+    padding: 40px 20px;
+  }
+  .deadline > h1 {
+    font-size: 28px;
+  }
+}

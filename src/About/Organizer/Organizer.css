@@ -1,0 +1,316 @@
+.about-cerada {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 40px;
+  overflow-x: clip;
+}
+
+.about-cerada > div {
+  flex: 2;
+}
+
+.about-cerada > img {
+  height: 350px;
+  flex: 1;
+  object-fit: contain;
+  mix-blend-mode: darken;
+  background-color: white;
+}
+
+.about-cerada > div > h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 0;
+  color: #0a07a5;
+}
+
+.about-cerada > div > p {
+  font-size: 15px;
+  font-weight: 500;
+  text-align: justify;
+  color: black;
+}
+
+.about-cerada > div > a {
+  font-family: "poppins", sans-serif;
+  padding: 10px 20px;
+  color: white;
+  background: linear-gradient(to right, #398b02, #4fc600);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  display: block;
+  margin-top: 20px;
+  width: fit-content;
+}
+
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  margin: 20px 40px;
+  padding: 10px 10px 10px 20px;
+  border-radius: 20px;
+  overflow: clip;
+  gap: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.vision {
+  flex-direction: row-reverse;
+  gap: 30px;
+}
+
+.mission > div > h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+  color: #0a07a5;
+  padding: 0px;
+  font-family: "Sora", system-ui;
+}
+
+.mission > div > p {
+  font-size: 15px;
+  font-weight: 500;
+  text-align: justify;
+  line-height: 24px;
+}
+
+.mission > div > img {
+  height: 200px;
+  border-radius: 20px;
+}
+
+.what-we {
+  margin: 50px 40px 20px 40px;
+}
+
+.what-we > h1 {
+  font-size: 28px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 0;
+  color: #0a07a5;
+}
+
+.what-we > p {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.what-we > div {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.what-we > div > p {
+  width: 400px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  padding: 16px;
+  border-radius: 10px;
+  margin: 0px 0px 20px 0px;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 500;
+  background: rgb(0, 214, 240);
+  background: linear-gradient(45deg, #646cff 0%, #aa00c5 100%);
+  color: white;
+  position: relative;
+  z-index: 1;
+  overflow: clip;
+}
+
+.what-we > div > p::before {
+  position: absolute;
+  content: "";
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.146) 100%
+  );
+  z-index: -1;
+  height: 380px;
+  width: 380px;
+  transform: rotate(-45deg);
+  animation: shine 3s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes shine {
+  0% {
+    transform: translate(-150%, -150%) rotate(-45deg);
+  }
+  100% {
+    transform: translate(150%, 150%) rotate(-45deg);
+  }
+}
+
+.cerada-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 40px 40px 40px;
+  background-color: #f5f5f5;
+}
+
+.visit-our {
+  padding: 20px 0px 0px 40px;
+  background-color: #f5f5f5;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #0a07a5;
+  text-align: center;
+}
+
+.cerada-links > a {
+  padding: 10px 16px;
+  cursor: pointer;
+  color: white;
+  margin: 0;
+  border-radius: 6px;
+  transition: 0.5s ease-in-out all;
+  height: 26px;
+  width: max-content;
+  display: block;
+}
+
+.cerada-links > a > span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 500px;
+  font-size: 13px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  background-color: white;
+  color: black;
+  padding: 6px 10px;
+  text-wrap: nowrap;
+}
+
+.cerada-links > a > span > svg {
+  font-size: 20px;
+  background-color: #ff007f;
+  border-radius: 50%;
+  padding: 4px;
+  overflow: visible;
+}
+
+.cerada-links > a > span > svg {
+  color: white;
+}
+
+.cerada-links > a > span > svg {
+  animation: jump 0.98s ease-in-out infinite;
+  box-shadow: rgba(0, 0, 0, 0.412) 0px 4px 12px;
+}
+
+.cerada-links > a > span > svg > path {
+  animation: jump 1s ease-in-out infinite;
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .cerada-links > a > span {
+    text-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .what-we > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    box-sizing: border-box;
+  }
+  .what-we > div > p {
+    width: auto;
+    margin-bottom: 0;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .about-cerada {
+    flex-direction: column;
+  }
+  .about-cerada > img {
+    width: 100%;
+    flex: none;
+  }
+  .cerada-links {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .cerada-links > a {
+    height: 0px;
+    width: 300px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .mission {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .mission > :nth-child(2) {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mission > div > img {
+    height: 200px;
+  }
+  .about-cerada {
+    padding: 20px 20px 20px 20px;
+  }
+  .mission {
+    margin: 40px 20px;
+  }
+  .what-we {
+    margin: 40px 20px;
+  }
+  .mission > div > img {
+    width: 100%;
+  }
+  .mission > :nth-child(2) {
+    background-color: white;
+    border-radius: 20px;
+  }
+  .cerada-links > a > span {
+    text-wrap: nowrap;
+  }
+  .about-cerada > img {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .what-we > div {
+    grid-template-columns: 1fr;
+  }
+}

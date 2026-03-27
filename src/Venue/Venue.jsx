@@ -27,7 +27,7 @@ const Venue = () => {
       data-aos="fade-up"
     >
       <h1 data-aos-anchor-placement="top-bottom" data-aos="fade-up">
-        Venue (Manila, Philippines)
+        Venue
       </h1>
       {/* <div
         className="venue_location"
@@ -43,6 +43,8 @@ const Venue = () => {
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div> */}
+      
+      <Hotel/>
       <p data-aos-anchor-placement="top-bottom" data-aos="fade-up">
         Iconic Spots to Explore in Manila, Philippines (<FaStar />
         <FaStar />
@@ -50,7 +52,6 @@ const Venue = () => {
         <FaStar />
         <FaStar />)
       </p>
-      <Hotel/>
       <section>
         <img loading="lazy" src={venue1} alt="" />
         <img loading="lazy" src={venue2} alt="" />

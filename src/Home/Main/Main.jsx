@@ -43,7 +43,9 @@ const Main = () => {
                 <i>
                   <MdLocationPin />
                 </i>{" "}
-                Location: Manila, Philippines.
+                Venue: Acacia Hotel Manila
+5400 E Asia Dr, Alabang, Muntinlupa,
+1781 Metro Manila, Philippines
               </p>
             </div>
           </div>

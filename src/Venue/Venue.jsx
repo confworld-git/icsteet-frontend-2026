@@ -18,7 +18,7 @@ import venue15 from "../assets/Venue/venue15.jpeg"
 import venue16 from "../assets/Venue/venue16.jpeg"
 import venue17 from "../assets/Venue/venue17.jpeg"
 import { FaStar } from "react-icons/fa6";
-
+import Hotel from "./Hotel";
 const Venue = () => {
   return (
     <div
@@ -50,6 +50,7 @@ const Venue = () => {
         <FaStar />
         <FaStar />)
       </p>
+      <Hotel/>
       <section>
         <img loading="lazy" src={venue1} alt="" />
         <img loading="lazy" src={venue2} alt="" />

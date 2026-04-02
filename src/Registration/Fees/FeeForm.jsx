@@ -39,21 +39,18 @@ const FeeForm = ({ selectedFee, selectedJournal, selectedAddons }) => {
     const journalAmount = selectedJournal?.specialPrice || 0;
     const addonsAmount = selectedAddons.reduce((sum, a) => sum + a.price, 0);
 
-    // Discounts apply to the COMBINED total (base + journal + addons)
-    const combinedBase = selectedFee.amount + journalAmount + addonsAmount;
 
     const calculations = calculatePricing({
-      baseAmount: combinedBase,
-      participantCategory,
-      hasMembership,
-      hasCoupon: !!appliedCoupon,
-      currency: "USD",
-    });
+    baseAmount: selectedFee.amount,   // base only
+    journalAmount,                    // passed separately
+    addonsAmount,                     // passed separately
+    participantCategory,
+    hasMembership,
+    hasCoupon: !!appliedCoupon,
+    currency: "USD",
+  });
 
-    // Attach breakdown extras for display & submission
-    calculations.registrationBase = selectedFee.amount;
-    calculations.journalAmount = journalAmount;
-    calculations.addonsAmount = addonsAmount;
+    
 
     setPricing(calculations);
   };
@@ -480,7 +477,7 @@ const FeeForm = ({ selectedFee, selectedJournal, selectedAddons }) => {
             {/* Registration base */}
             <div className="pricing-row">
               <span>Base Registration Fee:</span>
-              <span>${pricing.registrationBase}</span>
+              <span>${pricing.baseAmount}</span>
             </div>
 
             {/* Journal line */}
@@ -506,7 +503,7 @@ const FeeForm = ({ selectedFee, selectedJournal, selectedAddons }) => {
             {/* Combined subtotal before discounts */}
             {(pricing.journalAmount > 0 || pricing.addonsAmount > 0) && (
               <div className="pricing-row" style={{ borderTop: "1px dashed #e0e0e0", paddingTop: "8px", marginTop: "4px" }}>
-                <span>Combined Subtotal:</span>
+                {/* <span>Combined Subtotal:</span>
                 <span>
                   $
                   {(
@@ -514,7 +511,7 @@ const FeeForm = ({ selectedFee, selectedJournal, selectedAddons }) => {
                     pricing.journalAmount +
                     pricing.addonsAmount
                   ).toLocaleString()}
-                </span>
+                </span> */}
               </div>
             )}
 
@@ -523,7 +520,7 @@ const FeeForm = ({ selectedFee, selectedJournal, selectedAddons }) => {
               <>
                 {hasMembership && appliedCoupon ? (
                   <div className="pricing-row discount">
-                    <span>Combined Discount (10%):</span>
+                    <span>Combined Discount (10% on registration fee):</span>
                     <span>- ${pricing.totalDiscount}</span>
                   </div>
                 ) : (

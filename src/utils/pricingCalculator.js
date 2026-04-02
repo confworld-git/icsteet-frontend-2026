@@ -1,64 +1,67 @@
 export const calculatePricing = ({ 
-  baseAmount, 
+  baseAmount,       // base registration fee ONLY
+  journalAmount,    // journal support amount
+  addonsAmount,     // addons total
   participantCategory, 
   hasMembership, 
   hasCoupon,
   currency = "USD" 
 }) => {
-  // Convert baseAmount to number if it's a string
   const base = typeof baseAmount === 'string' ? parseFloat(baseAmount) : Number(baseAmount);
-  
-  // Validate that we have a valid number
+  const journal = Number(journalAmount) || 0;
+  const addons = Number(addonsAmount) || 0;
+
   if (isNaN(base) || base <= 0) {
-    console.error('Invalid baseAmount:', baseAmount, 'converted to:', base);
+    console.error('Invalid baseAmount:', baseAmount);
     return null;
   }
-  
+
   const isStudent = participantCategory?.toLowerCase().includes("student");
-  
-  // Membership fee based on category
   const membershipFee = hasMembership ? (isStudent ? 15 : 20) : 0;
-  
-  // Calculate discounts
+
+  // Discounts apply to BASE REGISTRATION FEE only
   let membershipDiscount = 0;
   let couponDiscount = 0;
   let totalDiscountPercent = 0;
-  
+
   if (hasMembership && hasCoupon) {
-    // Combined discount: 10%
     totalDiscountPercent = 0.10;
   } else if (hasMembership) {
-    // Membership only: 5%
     totalDiscountPercent = 0.05;
-    membershipDiscount = base * 0.05;
   } else if (hasCoupon) {
-    // Coupon only: 5%
     totalDiscountPercent = 0.05;
-    couponDiscount = base * 0.05;
   }
-  
+
   const totalDiscount = base * totalDiscountPercent;
-  
-  // If both selected, split discount evenly for display
+
   if (hasMembership && hasCoupon) {
     membershipDiscount = totalDiscount / 2;
     couponDiscount = totalDiscount / 2;
+  } else if (hasMembership) {
+    membershipDiscount = totalDiscount;
+  } else if (hasCoupon) {
+    couponDiscount = totalDiscount;
   }
-  
-  // Calculate final amount
-  const discountedAmount = base - totalDiscount;
-  const finalAmount = discountedAmount + membershipFee;
-  
-  // Bank tax (5.8%)
+
+  // Discounted base fee
+  const discountedBase = base - totalDiscount;
+
+  // Final amount = discounted base + journal + addons + membership fee
+  const finalAmount = discountedBase + journal + addons + membershipFee;
+
+  // Bank tax on final amount
   const bankTax = finalAmount * 0.060;
   const total = finalAmount + bankTax;
-  
+
   return {
     baseAmount: Number(base.toFixed(2)),
+    journalAmount: Number(journal.toFixed(2)),
+    addonsAmount: Number(addons.toFixed(2)),
     membershipFee: Number(membershipFee.toFixed(2)),
     membershipDiscount: Number(membershipDiscount.toFixed(2)),
     couponDiscount: Number(couponDiscount.toFixed(2)),
     totalDiscount: Number(totalDiscount.toFixed(2)),
+    discountedBase: Number(discountedBase.toFixed(2)),
     finalAmount: Number(finalAmount.toFixed(2)),
     bankTax: Number(bankTax.toFixed(2)),
     total: Number(total.toFixed(2)),

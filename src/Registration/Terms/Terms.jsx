@@ -188,6 +188,13 @@ const Terms = () => {
           </li>
         </ul>
       </div>
+      <div className="pb-4">
+        <h1>Program Slot Policy</h1>
+        <p>
+          No changes to allocated slots will be allowed once the official program schedule (Agenda) is released.
+        </p>
+        
+      </div>
       <div>
         <h1>Cancellation Policy</h1>
         <p>

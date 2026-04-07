@@ -1,11 +1,7 @@
 import React from "react";
 import "./Deadline.css";
-
+import { Link } from "react-router-dom";
 const hardcodedDeadlines = [
-
-
-
-
   {
     Deadline_Title: "Early_Bird_Registration",
     Date: "28",
@@ -63,6 +59,32 @@ const Deadline = () => {
           </div>
         ))}
       </section>
+
+      <div className="bg-white  p-6 max-w-md w-full mx-auto mt-2">
+        {/* Title */}
+        {/* <h2 className="text-xl font-semibold mb-2">{title}</h2> */}
+
+        {/* Description */}
+        {/* <p className="text-gray-600 mb-6">{description}</p> */}
+
+        {/* Buttons */}
+        <div className="flex gap-4">
+          <Link
+            to="/Abstract&Full-paper-submission"
+            className="flex-1 text-center !text-white py-2 rounded-lg bg-green-600 hover:opacity-90 transition"
+          >
+            Submit Paper
+          </Link>
+
+          <Link
+            to="/Registration_Fees"
+            className="flex-1 text-center !text-white py-2 rounded-lg bg-blue-600 hover:opacity-90 transition"
+          >
+            Register Now
+          </Link>
+        </div>
+        
+      </div>
       <p data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         For detailed submission guidelines, please visit the{" "}
         <a href="/Submission_Guidelines">Submission Guidelines Page</a>

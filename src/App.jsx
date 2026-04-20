@@ -30,6 +30,27 @@ import ScrollTop from "./ScrollTop.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+function FloatingActions() {
+  return (
+    <div className="fixed bottom-6 right-6 flex flex-col gap-3 z-50">
+      
+      <a
+        href="/Abstract&Full-paper-submission#top"
+        className="px-5 py-3 bg-blue-800 hover:bg-lime-500 !text-white hover:text-blue-800 text-sm font-semibold rounded-lg shadow-lg whitespace-nowrap transition-colors duration-200 text-center"
+      >
+        Submit Paper
+      </a>
+
+      <a
+        href="/Registration_Fees#top"
+        className="px-5 py-3 bg-lime-500 hover:bg-blue-800 !text-blue-800 hover:text-white text-sm font-semibold rounded-lg shadow-lg whitespace-nowrap transition-colors duration-200 text-center"
+      >
+        Register Now
+      </a>
+
+    </div>
+  );
+}
 const Layout = ({ children }) => {
   const location = useLocation();
   const SelectedRoots = [
@@ -37,12 +58,22 @@ const Layout = ({ children }) => {
     "/Payment_Success_Page",
     "/ICSTEET_2026_Dashboard",
   ];
+
   const isRoot = SelectedRoots.includes(location.pathname);
+
   return (
     <>
       {!isRoot && <Navbar />}
+
+      {/* 🔥 Anchor target */}
+      <div id="top"></div>
+
       {children}
+
       {!isRoot && <Footer />}
+
+      {/* 🔥 Floating Buttons */}
+      {!isRoot && <FloatingActions />}
     </>
   );
 };

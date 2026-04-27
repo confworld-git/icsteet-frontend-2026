@@ -33,7 +33,7 @@ const Speaker = () => {
 
   return (
     <div className="speaker">
-      <section>
+      {/* <section>
         <h1>Welcome Address</h1>
         {welcomeAddress.length > 0 ? (
           ""
@@ -72,9 +72,9 @@ const Speaker = () => {
               length: Math.max(4 - welcomeAddress.length, 0),
             }).map((_, index) => <CardSkeleton key={`skeleton-${index}`} />)}
         </section>
-      </section>
+      </section> */}
 
-      <section>
+      {/* <section>
         <h1>Guest Of Honour</h1>
         {guestOfHonour.length > 0 ? (
           ""
@@ -113,7 +113,7 @@ const Speaker = () => {
               length: Math.max(4 - guestOfHonour.length, 0),
             }).map((_, index) => <CardSkeleton key={`skeleton-${index}`} />)}
         </section>
-      </section>
+      </section> */}
 
       <section>
         <h1>Conference Chair</h1>

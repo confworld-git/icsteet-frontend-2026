@@ -3,7 +3,7 @@ import React from "react";
 export default function AcademicPartnerCard() {
   return (
     <section className="py-8">
-        <h1 className="text-3xl text-violet-950 font-extrabold text-center">Academic Partner</h1>
+        <h1 className="text-3xl text-violet-950 font-extrabold text-center">Academic Partners</h1>
 <div className="bg-white rounded-2xl shadow-xl hover:shadow-xl transition-shadow duration-300 p-6 flex flex-col items-center text-center max-w-lg mx-auto">
       {/* Logo */}
       <img

@@ -61,10 +61,10 @@ const Navbar = () => {
                 <a href="/Speakers">Speakers</a>
               </li> */}
               <li>
-                <a href="/SpeakerList">Speakers</a>
+                <a href="/Speakers">Speakers</a>
               </li>
               <li>
-                <a href="/OCMList">Organizing Committee Member</a>
+                <a href="/Organizing_Committee_Members">Organizing Committee Member</a>
               </li>
               {/* <li>
                 <a href="/Organizing_Committee_Member">

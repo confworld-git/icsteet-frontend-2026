@@ -116,9 +116,9 @@ const App = () => {
           <Route path="/Publication" element={<Publication />} />
           <Route path="/ICSTEET_2026_Login" element={<Login />} />
           <Route path="/Payment_Success_Page" element={<Success />} />
-          <Route path="/Speakers" element={<Speaker />} />
-          <Route path="/SpeakerList" element={<SpeakerList />} />
-          <Route path="/OCMList" element={<OCMList />} />
+          <Route path="/SpeakerList" element={<Speaker />} />
+          <Route path="/Speakers" element={<SpeakerList />} />
+          <Route path="/Organizing_Committee_Members" element={<OCMList />} />
           <Route path="/About_Organizer" element={<Organizer />} />
           <Route path="/Organizing_Committee_Member" element={<OCM />} />
           <Route path="/Sponsors" element={<Sponsors/>} />

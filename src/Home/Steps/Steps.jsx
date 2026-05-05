@@ -1,10 +1,10 @@
 import React from "react";
 import "./Steps.css";
-import anime1 from "../../assets/video/anime1.gif";
-import anime2 from "../../assets/video/anime2.gif";
-import anime3 from "../../assets/video/anime3.gif";
-import anime4 from "../../assets/video/anime4.gif";
-import arrow from "../../assets/video/arrow.png";
+import anime1 from "../../assets/Video/anime1.gif";
+import anime2 from "../../assets/Video/anime2.gif";
+import anime3 from "../../assets/Video/anime3.gif";
+import anime4 from "../../assets/Video/anime4.gif";
+import arrow from "../../assets/Video/arrow.png";
 
 const Steps = () => {
   return (

@@ -57,9 +57,15 @@ const Navbar = () => {
               <li>
                 <a href="/About_Organizer">About Organizer</a>
               </li>
-              <li>
+              {/* <li>
                 <a href="/Speakers">Speakers</a>
+              </li> */}
+              <li>
+                <a href="/SpeakerList">Speakers</a>
               </li>
+              {/* <li>
+                <a href="/OCMList">Organizing Committee Member</a>
+              </li> */}
               <li>
                 <a href="/Organizing_Committee_Member">
                   Organizing Committee Member

@@ -22,6 +22,8 @@ import ProtectedRoute from "./ProtectedRoute.jsx";
 import Sponsors from './Sponsors/Sponsors.jsx'
 import { Toaster } from "react-hot-toast";
 import Speaker from "./About/Speaker/Speaker.jsx";
+import SpeakerList from "./About/Speaker/SpeakerGrid.jsx";
+import OCMList from "./About/Speaker/OCMGrid.jsx";
 import OCM from "./About/OCM/OCM.jsx";
 import OCMform from "./About/OCM/OCMform.jsx";
 import Footer from "./Home/Footer/Footer.jsx";
@@ -115,6 +117,8 @@ const App = () => {
           <Route path="/ICSTEET_2026_Login" element={<Login />} />
           <Route path="/Payment_Success_Page" element={<Success />} />
           <Route path="/Speakers" element={<Speaker />} />
+          <Route path="/SpeakerList" element={<SpeakerList />} />
+          <Route path="/OCMList" element={<OCMList />} />
           <Route path="/About_Organizer" element={<Organizer />} />
           <Route path="/Organizing_Committee_Member" element={<OCM />} />
           <Route path="/Sponsors" element={<Sponsors/>} />

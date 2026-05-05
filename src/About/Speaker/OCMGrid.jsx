@@ -8,14 +8,14 @@ const ROLE_ORDER = [
 ];
 
 const ROLE_COLORS = {
-  "Scientific Committee": "text-blue-600",
-  "Review Committee": "text-blue-600",
+  "Scientific Committee": "text-green-600",
+  "Review Committee": "text-green-600",
   
 };
 
 const BADGE_COLORS = {
-  "Scientific Committee": "bg-blue-50 text-blue-700 border border-blue-200",
-  "Review Committee": "bg-blue-50 text-blue-700 border border-blue-200",
+  "Scientific Committee": "bg-green-50 text-green-700 border border-green-200",
+  "Review Committee": "bg-green-50 text-green-700 border border-green-200",
   
 };
 
@@ -104,11 +104,11 @@ const Speakers = () => {
                     width={200}
                     height={200}
                     loading="lazy"
-                    className="w-[200px] h-[200px] rounded-full object-cover border-4 border-blue-400 p-1 mb-3"
+                    className="w-[200px] h-[200px] rounded-full object-cover border-4 border-green-400 p-1 mb-3"
                   />
 
                   {/* Speaker Name */}
-                  <h2 className="text-base font-semibold text-center mb-2 min-h-[40px] flex items-center text-blue-700">
+                  <h2 className="text-base font-semibold text-center mb-2 min-h-[40px] flex items-center text-green-700">
                     {name}
                   </h2>
 

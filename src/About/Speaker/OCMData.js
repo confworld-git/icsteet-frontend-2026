@@ -1,17 +1,96 @@
 const OCMData = [
-  // Conference Chair
- 
-
+  // Scientific Committee Members
   {
-    name: "Assoc. Prof. Dr. Norasyikin Mahmud",
+    name: "Dr. Rajani Priya Nippatla",
+    title: "Senior Technical Lead,",
+    title2: "Kellton Technologies Inc,",
+    title3: "Texas,",
+    title4: "USA.",
+    image: "/images/ocm/s1.png",
+    role: "Scientific Committee",
+    country: "USA",
+  },
+  {
+    name: "Dr. Jhonnel J. Abalajon",
+    title: "Assistant Professor I & Gender and Development Focal Person,",
+    title2: "Hospitality Management,",
+    title3: "Capiz State University,",
+    title4: "Philippines.",
+    image: "/images/ocm/s2.png",
+    role: "Scientific Committee",
+    country: "Philippines",
+  },
+  {
+    name: "Dr. Udaya Kumar Addanki",
+    title: "Senior Assistant Professor,",
+    title2: "Department of Computer Science Engineering,",
+    title3: "Gayatri Vidya Parishad College of Engineering for Women (A),",
+    title4: "Madhurawada, Visakhapatnam,",
+    title5: "India.",
+    image: "/images/ocm/s3.png",
+    role: "Scientific Committee",
+    country: "India",
+  },
+  {
+    name: "Dr. Abdul Mateen Ahmed",
     title: "Associate Professor,",
-    title2: "Universiti Poly-Tech,",
-    title3: "Malaysia.",
-    image: "/images/speakers/nora.webp",
+    title2: "Department of ECE,",
+    title3: "ISL Engineering College,",
+    title4: "Hyderabad, India.",
+    image: "/images/ocm/s4.png",
+    role: "Scientific Committee",
+    country: "India",
+  },
+
+  // Review Committee Members
+  {
+    name: "Dr. Chaitanya Vasamsetty",
+    title: "Senior Developer,",
+    title2: "Anthem INC,",
+    title3: "Georgia, USA.",
+    image: "/images/ocm/r1.png",
+    role: "Review Committee",
+    country: "USA",
+  },
+  {
+    name: "Dr. Rubén González Vallejo",
+    title: "Associate Professor,",
+    title2: "University of Malaga,",
+    title3: "Spain.",
+    image: "/images/ocm/r2.webp",
+    role: "Review Committee",
+    country: "Spain",
+  },
+  {
+    name: "Dr. Norhaya Hanum Binti Mohamad",
+    title: "Senior Lecturer,",
+    title2: "Faculty of Hotel & Tourism Management,",
+    title3: "Universiti Teknologi MARA,",
+    title4: "Malaysia.",
+    image: "/images/ocm/r3.png",
     role: "Review Committee",
     country: "Malaysia",
   },
-  
+  {
+    name: "Mr. Nihar Malali",
+    title: "Senior Solutions Architect,",
+    title2: "Senior Director, National Life Group,",
+    title3: "Dallas,",
+    title4: "Texas, USA.",
+    image: "/images/ocm/r4.png",
+    role: "Review Committee",
+    country: "USA",
+  },
+  {
+    name: "Dr. Laxmi Narayan Soni",
+    title: "Assistant Professor,",
+    title2: "Dept. of Computer Science and Engineering,",
+    title3: "AKS University,",
+    title4: "India.",
+    image: "/images/ocm/r5.png",
+    role: "Review Committee",
+    country: "India",
+  },
 ];
 
 export default OCMData;
